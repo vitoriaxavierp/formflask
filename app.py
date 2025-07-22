@@ -18,7 +18,7 @@ def formulario():
             'password': password
         }
         
-        flash(f'Olá, {username}! Seu cadastro foi concluído com sucesso!')
+        flash(f'Olá, {username}! Seu cadastro foi concluído com sucesso!', 'success')
         return redirect(url_for('formulario'))
 
     return render_template('formulario.html')
